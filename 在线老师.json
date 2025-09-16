@@ -1,0 +1,119 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1000,
+  "data": [
+    {
+      "id": 10000,
+      "realname": "张明",
+      "deptname": "RT8901",
+      "majorname": "13800138801",
+      "classname": "计算机科学与技术学院",
+      "grade": "数据结构",
+      "telephone": "大四",
+      "qq": "89789878",
+      "job": "团支部书记",
+      "status": "启用"
+    },
+    {
+      "id": 10001,
+      "realname": "孙梅",
+      "deptname": "KL2345",
+      "majorname": "13900864752",
+      "classname": "电子信息工程学院",
+      "grade": "电路原理",
+      "telephone": "大三",
+      "qq": "34234576",
+      "job": "班长",
+      "status":"启用"
+    },{
+      "id": 10002,
+      "realname": "周佳怡",
+      "deptname": "GH0567",
+      "majorname": "13572646857",
+      "classname": "软件学院",
+      "grade": "软件工程",
+      "telephone": "大四",
+      "qq": "89789878",
+      "job": "团支部书记",
+      "status": "启用"
+    },{
+      "id": 10003,
+      "realname": "郑浩宇",
+      "deptname": "JS87557",
+      "majorname": "13100131009",
+      "classname": "土木工程学院",
+      "grade": "建筑力学",
+      "telephone": "大二",
+      "qq": "23789878",
+      "job": "团支部书记",
+      "status":"启用"
+    },{
+      "id": 10004,
+      "realname": "赵宇轩",
+      "deptname": "IO87547",
+      "majorname": "18585654539",
+      "classname": "化工与材料学院",
+      "grade": "有机化学",
+      "telephone": "大二",
+      "qq": "89789878",
+      "job": "团支部书记",
+      "status": "禁用"
+    },{
+      "id": 10005,
+      "realname": "王强",
+      "deptname": "OP67547",
+      "majorname": "15673288976",
+      "classname": "法学院",
+      "grade": "民法",
+      "telephone": "大一",
+      "qq": "89789878",
+      "job": "团支部书记",
+      "status": "启用"
+    },{
+      "id": 10006,
+      "realname": "黄俊豪",
+      "deptname": "TY9865",
+      "majorname": "16754338754",
+      "classname": "文学院",
+      "grade": "古代文学",
+      "telephone": "大二",
+      "qq": "89789878",
+      "job": "团支部书记",
+      "status": "启用"
+    },{
+      "id": 10007,
+      "realname": "周雅雯",
+      "deptname": "GH7684",
+      "majorname": "13543789619",
+      "classname": "体育学院",
+      "grade": "体育保健学",
+      "telephone": "大三",
+      "qq": "89789878",
+      "job": "团支部书记",
+      "status": "启用"
+    },{
+      "id": 10008,
+      "realname": "陈晨",
+      "deptname": "KL56775",
+      "majorname": "13435775437",
+      "classname": "计算机科学与技术学院",
+      "grade": "计算机网络",
+      "telephone": "大一",
+      "qq": "89789878",
+      "job": "团支部书记",
+      "status": "启用"
+    },{
+      "id": 10009,
+      "realname": "吴婷",
+      "deptname": "TY64688",
+      "majorname": "16578532018",
+      "classname": "软件学院",
+      "grade": "离散数学",
+      "telephone": "大一",
+      "qq": "89789878",
+      "job": "团支部书记",
+      "status": "启用"
+    }
+  ]
+}

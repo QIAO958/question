@@ -1,0 +1,69 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1000,
+  "data": [
+    {
+      "id": 10000,
+      "realname": "计算机科学与技术学院",
+      "deptname": "《Python编程基础与算法应用试题》",
+      "majorname": "大二",
+      "classname": "计科二班"
+    },
+    {
+      "id": 10001,
+      "realname": "电子信息工程学院",
+      "deptname": "《模拟电子电路分析与设计试题》",
+      "majorname": "大二",
+      "classname": "全体"
+    },{
+    "id": 10002,
+    "realname": "软件学院",
+    "deptname": "《Java软件开发与数据库应用试题》",
+    "majorname": "大二",
+    "classname": "软件三班"
+    },{
+     "id": 10003,
+     "realname": " 土木工程学院",
+     "deptname": "《建筑结构力学与识图试题》",
+     "majorname": "大二",
+     "classname": "计科二班"
+    },{
+    "id": 10004,
+    "realname": " 化工与材料学院",
+    "deptname": "《无机化学与材料性能测试试题》",
+    "majorname": "大一",
+    "classname": "全体"
+    },{
+     "id": 10005,
+     "realname": "法学院",
+     "deptname": "《刑法案例分析与法律条文应用试题》",
+     "majorname": "大三",
+     "classname": "全体"
+    },{
+     "id": 10006,
+     "realname": "体育学院",
+     "deptname": "《体育训练理论与运动康复试题》",
+     "majorname": "大一",
+     "classname": "全体"
+    },{
+    "id": 10007,
+    "realname": "文学院",
+    "deptname": "《现代汉语写作与文本分析试题》",
+    "majorname": "大四",
+    "classname": "文院六班"
+    },{
+    "id": 10008,
+    "realname": "艺术学院",
+    "deptname": "《色彩构成与视觉传达设计试题》",
+    "majorname": "大三",
+    "classname": "计科二班"
+    },{
+     "id": 10009,
+     "realname": "全体学院",
+     "deptname": "《中国近代史》",
+     "majorname": "大一",
+     "classname": "全体"
+    }
+  ]
+}

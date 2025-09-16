@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>教师教学情况统计</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@4.3.0/dist/echarts.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .page-title {
+            text-align: center;
+            margin: 20px 0 30px;
+            color: #2c3e50;
+        }
+        .charts-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        @media (max-width: 1024px) {
+            .charts-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        .chart-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .chart-title {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #34495e;
+        }
+        .chart-wrapper {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="page-title">教师教学情况统计分析</h1>
+    
+    <div class="charts-container">
+        <!-- 饼图容器 -->
+        <div class="chart-card">
+            <h2 class="chart-title">教师所教年级分布</h2>
+            <div id="pieChart" class="chart-wrapper"></div>
+        </div>
+        
+        <!-- 柱状图容器 -->
+        <div class="chart-card">
+            <h2 class="chart-title">教师所教科目分布</h2>
+            <div id="barChart" class="chart-wrapper"></div>
+        </div>
+    </div>
+
+    <script>
+        // 初始化饼图
+        const pieChart = echarts.init(document.getElementById('pieChart'));
+        const pieOption = {
+            title: {
+                text: '教师所教年级统计',
+                subtext: '2025年9月第1周截止',
+                left: 'center'
+            },
+            tooltip: {
+                trigger: 'item',
+                formatter: '{a} <br/>{b}: {c} ({d}%)'
+            },
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: ['大一', '大二', '大三', '大四']
+            },
+            series: [{
+                name: '教师人数',
+                type: 'pie',
+                radius: '70%',
+                center: ['50%', '60%'],
+                data: [
+                    {value: 120, name: '大一'},
+                    {value: 500, name: '大二'},
+                    {value: 320, name: '大三'},
+                    {value: 230, name: '大四'}
+                ],
+                itemStyle: {
+                    color: function(params) {
+                        const colorList = ['#4285f4', '#34a853', '#fbbc05', '#ea4335'];
+                        return colorList[params.dataIndex];
+                    },
+                    borderColor: '#fff',
+                    borderWidth: 2
+                },
+                emphasis: {
+                    itemStyle: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                }
+            }]
+        };
+        pieChart.setOption(pieOption);
+        
+        // 初始化柱状图
+        const barChart = echarts.init(document.getElementById('barChart'));
+        const barOption = {
+            title: {
+                text: '教师所教科目',
+                subtext: '2025年9月第1周截止',
+                left: 'center',
+                textStyle: {
+                    fontSize: 18,
+                    color: '#333'
+                },
+                subtextStyle: {
+                    color: '#666'
+                }
+            },
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                },
+                backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                borderColor: '#ddd',
+                borderWidth: 1,
+                textStyle: {
+                    color: '#333'
+                },
+                formatter: '{a}: {c}'
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '15%',
+                top: '15%',
+                containLabel: true
+            },
+            xAxis: {
+                data: ['离散数学','高等数学','电路原理','建筑力学','有机化学','民法','古代文学','计算机网络'],
+                axisLabel: {
+                    interval: 0,
+                    rotate: 0,
+                    fontSize: 12,
+                    color: '#000'
+                },
+                axisLine: {
+                    lineStyle: {
+                        color: '#ddd'
+                    }
+                },
+                axisTick: {
+                    show: false
+                }
+            },
+            yAxis: {
+                name: '教师数量',
+                nameTextStyle: {
+                    color: '#666'
+                },
+                axisLine: {
+                    show: false
+                },
+                axisTick: {
+                    show: false
+                },
+                splitLine: {
+                    lineStyle: {
+                        color: '#f0f0f0'
+                    }
+                }
+            },
+            series: [{
+                name: "教授该科目的教师数",
+                type: 'bar',
+                data: [42,51,13,15,17,6,7,45],
+                barWidth: '60%',
+                itemStyle: {
+                    color: '#1890ff',
+                    borderRadius: [4, 4, 0, 0]
+                },
+                emphasis: {
+                    itemStyle: {
+                        color: '#096dd9'
+                    }
+                },
+                label: {
+                    show: true,
+                    position: 'top',
+                    color: '#666'
+                }
+            }]
+        };
+        barChart.setOption(barOption);
+        
+        // 响应窗口大小变化
+        window.addEventListener('resize', function() {
+            pieChart.resize();
+            barChart.resize();
+        });
+    </script>
+</body>
+</html>
+    

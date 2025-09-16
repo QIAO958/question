@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>2025级学生高数A失分分析汇总（按分数排序）</title>
+    <!-- 引入ECharts稳定版本 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js"></script>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        .page-title {
+            text-align: center;
+            color: #333;
+            margin: 0 0 30px;
+            font-size: 22px;
+        }
+        .charts-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+            gap: 20px;
+        }
+        .chart-wrapper {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .chart-div {
+            width: 100%;
+            height: 380px;
+            margin-top: 10px;
+        }
+        .rank-tag {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            background: #e74c3c;
+            color: white;
+            border-radius: 50%;
+            font-size: 14px;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="page-title">2025级学生高数A失分分析汇总（按总分从低到高排列）</h1>
+    
+    <div class="charts-container">
+        <!-- 1. 赵思瑶（56分） -->
+        <div class="chart-wrapper">
+            <div>
+                <span class="rank-tag">1</span>
+                <span style="font-size: 16px; color: #333;">2025赵思瑶高数A失分分析（总分：56，失分：44）</span>
+            </div>
+            <div id="chart1" class="chart-div"></div>
+        </div>
+        
+        <!-- 2. 张雨桐（61分） -->
+        <div class="chart-wrapper">
+            <div>
+                <span class="rank-tag">2</span>
+                <span style="font-size: 16px; color: #333;">2025张雨桐高数A失分分析（总分：61，失分：39）</span>
+            </div>
+            <div id="chart2" class="chart-div"></div>
+        </div>
+        
+        <!-- 3. 赵泽宇（73分） -->
+        <div class="chart-wrapper">
+            <div>
+                <span class="rank-tag">3</span>
+                <span style="font-size: 16px; color: #333;">2025赵泽宇高数A失分分析（总分：73，失分：27）</span>
+            </div>
+            <div id="chart3" class="chart-div"></div>
+        </div>
+        
+        <!-- 4. 李浩然（78分） -->
+        <div class="chart-wrapper">
+            <div>
+                <span class="rank-tag">4</span>
+                <span style="font-size: 16px; color: #333;">2025李浩然高数A失分分析（总分：78，失分：22）</span>
+            </div>
+            <div id="chart4" class="chart-div"></div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            if (typeof echarts === 'undefined') {
+                alert("ECharts图表库加载失败，请检查网络连接后刷新页面！");
+                return;
+            }
+
+            function initChart(chartId, dataList) {
+                const chartDom = document.getElementById(chartId);
+                if (!chartDom) {
+                    console.error(`图表容器${chartId}未找到`);
+                    return;
+                }
+                const myChart = echarts.init(chartDom);
+                
+                const option = {
+                    tooltip: {
+                        trigger: 'item',
+                        formatter: '{b}: 失 {c} 分'  // 提示信息改为失分
+                    },
+                    series: [
+                        {
+                            name: '失分数',  // 系列名称更新
+                            type: 'pie',
+                            radius: '70%',
+                            center: ['50%', '50%'],
+                            data: dataList,
+                            itemStyle: {
+                                borderRadius: 4,
+                                borderColor: '#fff',
+                                borderWidth: 2
+                            },
+                            label: {
+                                show: true,
+                                position: 'outside',
+                                formatter: '{b}: {c}分'  // 标签显示为分数
+                            },
+                            labelLine: {
+                                show: true,
+                                length: 15,
+                                length2: 20
+                            }
+                        }
+                    ]
+                };
+
+                myChart.setOption(option);
+                
+                window.addEventListener('resize', function() {
+                    myChart.resize();
+                });
+            }
+
+            // 赵思瑶（56分，总失分44分）
+            initChart('chart1', [
+                {value: 6, name: '极限'},
+                {value: 7, name: '导数'},
+                {value: 7, name: '微积分'},
+                {value: 8, name: '一元函数'},
+                {value: 8, name: '微分方程'},
+                {value: 8, name: '多元微积分'}
+            ]);
+
+            // 张雨桐（61分，总失分39分）
+            initChart('chart2', [
+                {value: 3, name: '极限'},
+                {value: 4, name: '导数'},
+                {value: 7, name: '微积分'},
+                {value: 5, name: '一元函数'},
+                {value: 8, name: '微分方程'},
+                {value: 12, name: '多元微积分'}
+            ]);
+
+            // 赵泽宇（73分，总失分27分）
+            initChart('chart3', [
+                {value: 2, name: '极限'},
+                {value: 3, name: '导数'},
+                {value: 4, name: '微积分'},
+                {value: 5, name: '一元函数'},
+                {value: 6, name: '微分方程'},
+                {value: 7, name: '多元微积分'}
+            ]);
+
+            // 李浩然（78分，总失分22分）
+            initChart('chart4', [
+                {value: 3, name: '极限'},
+                {value: 2, name: '导数'},
+                {value: 1, name: '微积分'},
+                {value: 5, name: '一元函数'},
+                {value: 4, name: '微分方程'},
+                {value: 7, name: '多元微积分'}
+            ]);
+        };
+    </script>
+</body>
+</html>
+    

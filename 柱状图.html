@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>柱状图</title>
+		<script src="https://cdn.jsdelivr.net/npm/echarts@4.3.0/dist/echarts.min.js"></script>
+	</head>
+	<body>
+		<div id="mydiv" style="width: 600px;height: 400px;"></div>
+		<script>
+			mycharts=echarts.init(document.getElementById("mydiv"));
+			option={
+				title:{
+					text:'产品一周销量',
+					subtext:'2025年9月第1周',
+					left:'center'
+				},
+				tooltip:{
+					trigger:'axis',
+					axisPointer:{
+						type:'shadow'
+					}
+				},
+				xAxis:{
+					data:['鼠标','键盘','激光笔','投影仪']
+				},
+				yAxis:{},
+				series:[{
+					name:"销售量",
+					type:'bar',
+					data:[120,500,320,230]
+				}]
+			};
+			mycharts.setOption(option);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,151 @@
+{
+  "homeInfo": {
+    "title": "首页",
+    "href": "page/home.html"
+  },
+  "logoInfo": {
+    "title": "题库管理系统",
+    "image": "images/nuc.logo.png",
+    "href": ""
+  },
+  "menuInfo": [
+    {
+      "title": "常规管理",
+      "icon": "fa fa-address-book",
+      "href": "",
+      "target": "_self",
+      "child": [
+        {
+          "title": "首页",
+          "href": "page/home.html",
+          "icon": "fa fa-home",
+          "target": "_self"
+        },
+        {
+          "title": "学生管理",
+          "href": "",
+          "icon": "fa fa-group",
+          "target": "_self",
+          "child": [
+          {
+            "title": "添加学生",
+             "href":"addStudent.html",
+            "icon": "fa fa-plus-square-o",
+            "target": "_self"
+          }, {
+            "title": "删改查学生",
+            "href": "学生表格.html",
+            "icon": "fa fa-remove",
+            "target": "_self"
+          }
+        ]
+        },
+        {
+          "title": "院系管理",
+          "href": "",
+          "icon": "fa fa-institution",
+          "target": "_self",
+          "child": [
+            {
+              "title": "添加院系",
+              "href": "添加院系.html",
+              "icon": "fa fa-plus-square-o",
+              "target": "_self"
+            }, {
+              "title": "删改查院系",
+              "href": "院系表格.html",
+              "icon": "fa fa-remove",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "教师管理",
+          "href": "",
+          "icon": "fa fa-male",
+          "target": "_self",
+          "child": [
+            {
+              "title": "添加教师",
+              "href": "添加教师.html",
+              "icon": "fa fa-plus-square-o",
+              "target": "_self"
+            }, {
+              "title": "删改查教师",
+              "href": "教师表格.html",
+              "icon": "fa fa-remove",
+              "target": "_self"
+            }, {
+              "title": "教师统计",
+              "href": "柱饼-教师教学情况.html",
+              "icon": "fa fa-bar-chart",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "题库管理",
+          "href": "",
+          "icon": "fa fa-folder-open-o",
+          "target": "_self",
+          "child": [
+            {
+              "title": "历年真题",
+              "href": "历年真题.html",
+              "icon": "fa fa-folder-open",
+              "target": "_self"
+            }, {
+              "title": "数据分析",
+              "href": "饼柱-各试题分析.html",
+              "icon": "fa fa-pie-chart",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "考试管理",
+          "href": "",
+          "icon": "fa fa-book",
+          "target": "_self",
+          "child": [
+            {
+              "title": "学生排名",
+              "href": "学生排名.html",
+              "icon": "fa fa-mortar-board",
+              "target": "_self"
+            }, {
+              "title": "数据统计",
+              "href": "高数A成绩分析.html",
+              "icon": "fa fa-bar-chart",
+              "target": "_self"
+            }, {
+              "title": "待发布试题",
+              "href": "待发布试题.html",
+              "icon": "fa fa-pencil-square-o",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "在线答疑",
+          "href": "",
+          "icon": "fa fa-question",
+          "target": "_self",
+          "child": [
+            {
+              "title": "提问",
+              "href": "提问.html",
+              "icon": "fa fa-comment",
+              "target": "_self"
+            }, {
+              "title": "查询在线老师",
+              "href": "查询在线老师.html",
+              "icon": "fa fa-check-circle",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

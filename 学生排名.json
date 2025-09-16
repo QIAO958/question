@@ -1,0 +1,78 @@
+{
+	"code": 0,
+	"msg": "",
+	"count": 1000,
+	"data": [{
+			"id": "计算机科学与技术学院",
+			"classname": "高等数学A",
+			"relname": "1",
+			"deptname": "王子轩",
+			"majorname": "2405080808",
+			"grades": "100"
+		},
+		{
+			"id": "计算机科学与技术学院",
+			"classname": "高等数学A",
+			"relname": "1",
+			"deptname": "赵一诺",
+			"majorname": "2405087303",
+			"grades": "100"
+		}, {
+			"id": "计算机科学与技术学院",
+			"classname": "高等数学A",
+			"relname": "1",
+			"deptname": "张伟豪",
+			"majorname": "2405837484",
+			"grades": "100"
+		}, {
+			"id": "计算机科学与技术学院",
+			"classname":"高等数学A",
+			"relname": "1",
+			"deptname": "周子墨",
+			"majorname": "2405273648",
+			"grades": "100"
+		}, {
+			"id": "计算机科学与技术学院",
+			"classname":"高等数学A",
+			"relname": "2",
+			"deptname": "陈思源",
+			"majorname": "2405893840",
+			"grades": "99"
+		}, {
+			"id": "计算机科学与技术学院",
+			"classname": "高等数学A",
+			"relname": "3",
+			"deptname": "刘芳",
+			"majorname": "2405736487",
+			"grades": "97"
+		}, {
+			"id": "计算机科学与技术学院",
+			"classname":"高等数学A",
+			"relname": "3",
+			"deptname": "黄丽",
+			"majorname": "2405985476",
+			"grades": "97"
+		}, {
+			"id": "计算机科学与技术学院",
+			"classname":"高等数学A",
+			"relname": "4",
+			"deptname": "黄子晴",
+			"majorname": "2405173948",
+			"grades": "95"
+		}, {
+			"id": "计算机科学与技术学院",
+			"classname":"高等数学A",
+			"relname": "4",
+			"deptname": "赵强",
+			"majorname": "2405374829",
+			"grades": "95"
+		}, {
+			"id": "计算机科学与技术学院",
+			"classname": "高等数学A",
+			"relname": "5",
+			"deptname": "王紫涵",
+			"majorname": "2405472648",
+			"grades": "94.5"
+		}
+	]
+}

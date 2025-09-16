@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="lib/layui-v2.6.3/css/layui.css">
+		<style>
+			/* 为带有require类的元素添加红色星号前缀 */
+			.required::before {
+				/* 星号内容 */
+				content: "*";
+				/* 红色 */
+				color: #ff0000;
+				/* 与文字保持一点距离 */
+				margin-right: 4px;
+				/* 星号加粗 */
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<h1 style="text-align:center;">添加新学院</h1>
+		<br>
+		<div class="layui-form">
+			<div class="layui-form-item">
+				<label class="layui-form-label required">院系代号</label>
+				<div class="layui-input-block">
+					<input id="collegeCode" type="text" name="collegeCode" class="layui-input" lay-verify="required"
+						lay-reqtext="院系代号不能为空!" placeholder="请输入学院代号">
+				</div>
+			</div>
+	
+			
+			<div class="layui-form-item">
+				<label class="layui-form-label required">院系名称</label>
+				<div class="layui-input-block">
+					<input id="collegeName" type="text" name="collegeName" class="layui-input" lay-verify="required"
+						lay-reqtext="院系名称不能为空!"  placeholder="请输入院系名称">
+				</div>
+			</div>
+			<!-- 单选按钮：性别单选按钮开始 -->
+
+			<!-- 文本域开始 -->
+						<div class="layui-form-item">
+							<label class="layui-form-label">备注</label>
+							<div class="layui-input-block">
+								<textarea   name="remark" class="layui-textarea" placeholder="请输入备注信息"></textarea>
+							</div>
+						</div> <!-- 文本域结束 -->
+			
+			<!-- 提交按钮 -->
+			<div class="layui-form-item">
+				<div class="layui-input-block">
+					<button class="layui-btn layui-btn-normal" lay-submit lay-filter="saveBtn">确认保存</button>
+				</div>
+			</div><!-- 提交按钮结束 -->
+			
+		</div>
+		<script src="lib/layui-v2.6.3/layui.js"></script>
+	</body>
+</html>

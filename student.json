@@ -1,0 +1,119 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1000,
+  "data": [
+    {
+      "id": 10000,
+      "realname": "李雨桐",
+      "deptname": "2405040201",
+      "majorname": "13252256486",
+      "classname": "计科二班",
+      "grade": "大二",
+      "telephone": "计算机科学与技术",
+      "qq": "89789878",
+      "job": "团支部书记",
+      "status": "启用"
+    },
+    {
+      "id": 10001,
+      "realname": "吴杰",
+      "deptname": "2413040202",
+      "majorname": "17642386492",
+      "classname": "软工二班",
+      "grade": "大三",
+      "telephone": "软件学院",
+      "qq": "34234576",
+      "job": "班长",
+      "status":"启用"
+    },{
+      "id": 10002,
+      "realname": "陈思远",
+      "deptname": "2402030601",
+      "majorname": "16524387364",
+      "classname": "化工六班",
+      "grade": "大二",
+      "telephone": "化工与材料学院",
+      "qq": "89789878",
+      "job": "团支部书记",
+      "status": "启用"
+    },{
+      "id": 10003,
+      "realname": "张晓峰",
+      "deptname": "2209080317",
+      "majorname": "13100131009",
+      "classname": "电信三班",
+      "grade": "大四",
+      "telephone": "电子信息工程学院",
+      "qq": "23789878",
+      "job": "团支部书记",
+      "status":"启用"
+    },{
+      "id": 10004,
+      "realname": "李娜",
+      "deptname": "2304130709",
+      "majorname": "13300133007",
+      "classname": "法学院七班",
+      "grade": "大二",
+      "telephone": "法学院",
+      "qq": "89789878",
+      "job": "团支部书记",
+      "status": "禁用"
+    },{
+      "id": 10005,
+      "realname": "王子轩",
+      "deptname": "2405080808",
+      "majorname": "13754368976",
+      "classname": "计科八班",
+      "grade": "大二",
+      "telephone": "计算机科学与技术学院",
+      "qq": "89789878",
+      "job": "团支部书记",
+      "status": "启用"
+    },{
+      "id": 10006,
+      "realname": "周婷",
+      "deptname": "2401061009",
+      "majorname": "13912346502",
+      "classname": "土木工程十班",
+      "grade": "大二",
+      "telephone": "土木工程学院",
+      "qq": "89789878",
+      "job": "团支部书记",
+      "status": "启用"
+    },{
+      "id": 10007,
+      "realname": "郑欣宜",
+      "deptname": "2309760345",
+      "majorname": "13012345619",
+      "classname": "电信三班",
+      "grade": "大三",
+      "telephone": "电子信息工程学院",
+      "qq": "89789878",
+      "job": "团支部书记",
+      "status": "启用"
+    },{
+      "id": 10008,
+      "realname": "吴宇恒",
+      "deptname": "2209200818",
+      "majorname": "13528739987",
+      "classname": "电信八班",
+      "grade": "大四",
+      "telephone": "电子信息工程学院",
+      "qq": "89789878",
+      "job": "团支部书记",
+      "status": "启用"
+    },{
+      "id": 10009,
+      "realname": "赵雪",
+      "deptname": "2313071635",
+      "majorname": "16742836497",
+      "classname": "软工十六班",
+      "grade": "大三",
+      "telephone": "软件学院",
+      "qq": "89789878",
+      "job": "团支部书记",
+      "status": "启用"
+    }
+  ]
+}

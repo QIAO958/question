@@ -1,0 +1,54 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1000,
+  "data": [
+    {
+      "id": 10000,
+      "collegeCode": "05",
+      "collegeName": "计算机科学与技术学院",
+      "notes": "无"
+    },
+    {
+      "id": 10001,
+      "collegeCode": "09",
+      "collegeName": "电子信息工程学院",
+      "notes": "无"
+    },{
+      "id": 10002,
+      "collegeCode": "13",
+      "collegeName": "软件学院",
+      "notes": "无"
+    },{
+      "id": 10003,
+      "collegeCode": "01",
+      "collegeName": "土木工程学院",
+      "notes": "无"
+    },{
+     "id": 10004,
+     "collegeCode": "02",
+     "collegeName": "化工与材料学院",
+     "notes": "无"
+    },{
+     "id": 10005,
+     "collegeCode": "04",
+     "collegeName": "法学院",
+     "notes": "无"
+    },{
+     "id": 10006,
+     "collegeCode": "03",
+     "collegeName": "体育学院",
+     "notes": "无"
+    },{
+      "id": 10007,
+      "collegeCode": "07",
+      "collegeName": "文学院",
+      "notes": "无"
+    },{
+      "id": 10008,
+     "collegeCode": "12",
+     "collegeName": "艺术学院",
+     "notes": "无"
+    }
+  ]
+}
